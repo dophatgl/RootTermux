@@ -24,20 +24,20 @@ cd /data/data/com.termux/files/usr/etc/
 cp bash.bashrc bash.bashrc.bak
 mkdir /data/data/com.termux/files/usr/etc/Root
 cd /data/data/com.termux/files/usr/etc/Root
-wget  https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh
-bash kali.sh
+wget  https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Arch/armhf/arch.sh
+bash arch.sh
 echo $Enter
 clear    
 neofetch
 echo
 if [ "$choice" = "1" ];
 then
-echo " bash /data/data/com.termux/files/usr/etc/Root/start-kali.sh " >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo " bash /data/data/com.termux/files/usr/etc/Root/start-arch.sh " >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo
 echo "Restart your termux to become root user "
 elif [ "$choice" = "2" ];
 then
-echo " alias rootme='bash /data/data/com.termux/files/usr/etc/Root/start-kali.sh' " >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo " alias rootme-arch='bash /data/data/com.termux/files/usr/etc/Root/start-arch.sh' " >> /data/data/com.termux/files/usr/etc/bash.bashrc
 cd /data/data/com.termux/files/usr/etc
 source bash.bashrc
 echo 
